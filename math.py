@@ -16,7 +16,7 @@ def narcissistic(n):
             print(n, "is not a narcissistic number.")
 
 def boilaegg(n, e, m):
-    print("[BOIL A EGG is a program to count how long to boil a eggs with a user-based performance.]", "\n")
+    print("[BOIL A EGG is a program to count how long to boil a eggs with a customized pan capacity and performance]", "\n")
     if int(n) == 0:
         print("\n" + "You haven't input any egg yet." + "\n")
     else:
@@ -24,7 +24,7 @@ def boilaegg(n, e, m):
         print(n, "eggs for", minute, "minutes." + "\n")
 
 def piprox(n):
-    print("[PIPROX is a program to approx a phi number using phi series based on user input orde.]", "\n")
+    print("[PIPROX is a program to approx a phi number using phi series based on user input orde]", "\n")
     if (int(n) == 0):
         print("Your n orde is", n,)
     else:
@@ -40,7 +40,7 @@ piKira2(10)
 
 ## -> for table
 def probdens(x1, x2, d, r, b):
-    print("[PROBDENS is a program to calculate probability density.]", "\n")
+    print("[PROBDENS is a program to calculate probability density]", "\n")
     e = 2.71828
     p = 3.141594
     for x in np.arange(x1, x2+d, d):
@@ -68,3 +68,20 @@ def matrix(n):
         x =  np.arange(1, n+1).reshape(int(r), int(c))
         print("Here's your %dX%d matrix: \n" % (sqrt(n), sqrt(n)))
         print(x)
+
+def stats(n):
+    print("[STAT is a program to calculate mean, varian, standar deviation while user input customized n data]", "\n")
+    print("Your desired n data = ", n, "\n")
+    x = []
+    while len(x) < int(n):
+        xi = input("Input your X%d = " % (int(len(x)) + 1))
+        x.append(int(xi))
+        mean = sum(x) / len(x)
+        sig = 0
+        for b in x:
+            sigma = (float(b) - float(mean))**2
+            sig += float(sigma)
+            var = 1 / (float(n)-1) * float(sig)
+        print("\n\n", "Your current data is", len(x), "\n\n", x, "\n\n", "Mean = ", mean, "\n", "Squared mean = ", float(mean)**2, "\n", "Varians = ", var, "\n", "standar deviation = ", var**0.5, "\n\n")
+
+stats(5)

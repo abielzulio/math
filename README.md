@@ -4,7 +4,7 @@ narcissistic() is a program to check whether n as a user input number is a narci
 <br />
 
 ## __boilaegg(n, e, m)__
-boilaegg() is a program to count how long to boil a eggs with a customized pan performance where:
+boilaegg() is a program to count how long to boil a eggs with a customized pan capacity and performance where:
 
 > n = egg amount<br />
 > e = pan capacity<br />
@@ -13,7 +13,7 @@ boilaegg() is a program to count how long to boil a eggs with a customized pan p
 <br />
 
 ## __piprox(n)__
-piprox() is a program to approx a phi number based on n user input orde.
+piprox() is a program to approx a phi number using phi series based on user input orde.
 
 ![piprox](/equation/piprox.png)
 
@@ -33,3 +33,7 @@ probdens() is a probability density function where:
 ## __matrix(n)__
 
 matrix() is a program to create a matrix automatically based on n input:
+
+## __stats(n)__
+
+stats() is a program to calculate mean, varian, standar deviation while user input customized n data.
