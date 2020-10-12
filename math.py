@@ -1,5 +1,5 @@
 import modul arange untuk float
-from numpy import arange
+from numpy as np
 import pandas as pd
 from math import sqrt
 
@@ -25,7 +25,7 @@ def boilaegg(n, e, m):
         print(n, "eggs for", minute, "minutes." + "\n")
 
 def piprox(n):
-    print("[PIPROX is a program to approx a phi number using phi series based on user input orde]", "\n")
+    print("[PIPROX is a program to approx a phi number using phi series based on user input orde.]", "\n")
     if (int(n) == 0):
         print("Your n orde is", n,)
     else:
@@ -39,15 +39,17 @@ def piprox(n):
             print("Your approximated phi = ", phi, "\n")
 piKira2(10)
 
+## -> for table
 def probdens(x1, x2, d, r, b):
+    print("[PROBDENS is a program to calculate probability density.]", "\n")
     e = 2.71828
     p = 3.141594
-    for x in arange(x1, x2+d, d):
-        # operate exp
+    for x in np.arange(x1, x2+d, d):
+        # calculate exp
         exp = - (1 / 2) * ((float(x) - float(r)) / float(b)) ** 2
-        # operate denom
+        # calculate denom
         denom = float(b) * (sqrt(2 * float(p)))
-        # operate y
+        # calculate y
         y = 1 / float(denom) * float(e) ** float(exp)
         ## yield y
         print("%.2f  " % (x), y)
@@ -57,3 +59,13 @@ def probdens(x1, x2, d, r, b):
 ## k5 = probdens(0.2, sqrt(0.5))
 ## table = pd.DataFrame({'x':k1, 'μ=0 & σ2=0.2':k2, 'μ=0 & σ2=1':k3, 'μ=0 & σ2=5':k4, 'μ=0.2 & σ2=0.5':k5})
 ## print(table)
+
+def matrix(n):
+    print("[MATRIX is a program to create a matrix automatically based on n input]", "\n")
+    r = c = sqrt(n)
+    if r*r != n:
+        print("It's not matrix-able")
+    else:
+        x =  np.arange(1, n+1).reshape(int(r), int(c))
+        print("Here's your %dX%d matrix: \n" % (sqrt(n), sqrt(n)))
+        print(x)

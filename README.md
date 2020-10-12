@@ -29,3 +29,7 @@ probdens() is a probability density function where:
 > d = leap number<br />
 > r = mean<br />
 > b = standar deviation<br />
+
+## __matrix(n)__
+
+matrix() is a program to create a matrix automatically based on n input:
