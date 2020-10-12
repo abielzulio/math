@@ -40,7 +40,6 @@ def piprox(n):
             # sum approx to 3
             phi = 3 + float(p)
             print("Your approximated phi = ", phi, "\n")
-piKira2(10)
 
 ##################################
 
@@ -93,8 +92,6 @@ def stats(n):
             sig += float(sigma)
             var = 1 / (float(n)-1) * float(sig)
         print("\n\n", "Your current data is", len(x), "\n\n", x, "\n\n", "Mean = ", mean, "\n", "Squared mean = ", float(mean)**2, "\n", "Varians = ", var, "\n", "standar deviation = ", var**0.5, "\n\n")
-
-stats(5)
 
 ##################################
 
