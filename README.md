@@ -41,3 +41,10 @@ stats() is a program to calculate mean, varian, standar deviation while user inp
 ## __fibonacci(n)__
 
 fibonacci() is a program to show fibonacci sequence based n orde.
+
+## __logistic(x, k, n)
+
+logistic() is a program to compute logistic equation where:
+> x = initial x<br />
+> k = growth/rate death<br />
+> n = iteration/year<br />

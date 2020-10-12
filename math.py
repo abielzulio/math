@@ -110,3 +110,16 @@ n = int(input("Input your fibonacci orde = "))
 print("\n")
 print("Your fibonacci sequence:")
 [fibonacci(i) for i in range(1, n+1)]
+
+##################################
+
+def logistic(x, k, n):
+  print("[LOGISTIC is a program to compute logistic equation]", "\n")
+  if x <= 0 or x >= 1:
+      print("Your x value is not between 0 - 1.0", "\n")
+  else:
+      for i in range(1, n+1):
+          x = k * x * (1 - x)
+          print("%d  " % (i), x)
+
+logistic()
