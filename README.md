@@ -1,6 +1,9 @@
 ## narcissistic(n)
 narcissistic() is a program to check whether n as a user input number is a narcissistic number or not.
 
+<br />
+<br />
+
 ## boilaegg(n, e, m)
 boilaegg() is a program to count how long to boil a eggs with a customized pan performance where:
 
@@ -8,10 +11,16 @@ boilaegg() is a program to count how long to boil a eggs with a customized pan p
 > e = pan capacity<br />
 > m = minute per capacity<br />
 
+<br />
+<br />
+
 ## piprox(n)
-piprox() is a program to approx a phi number based on user input orde.
+piprox() is a program to approx a phi number based on n user input orde.
 
 ![piprox](/equation/piprox.png)
+
+<br />
+<br />
 
 ## probdens(x1, x2, d, r, b)
 
