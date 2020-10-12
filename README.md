@@ -37,3 +37,7 @@ matrix() is a program to create a matrix automatically based on n input:
 ## __stats(n)__
 
 stats() is a program to calculate mean, varian, standar deviation while user input customized n data.
+
+## __fibonacci(n)__
+
+fibonacci() is a program to show fibonacci sequence based n orde.

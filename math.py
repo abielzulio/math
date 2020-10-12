@@ -15,6 +15,8 @@ def narcissistic(n):
         else:
             print(n, "is not a narcissistic number.")
 
+##################################
+
 def boilaegg(n, e, m):
     print("[BOIL A EGG is a program to count how long to boil a eggs with a customized pan capacity and performance]", "\n")
     if int(n) == 0:
@@ -22,6 +24,8 @@ def boilaegg(n, e, m):
     else:
         minute = -(-int(n) // int(e)) * int(m)
         print(n, "eggs for", minute, "minutes." + "\n")
+
+##################################
 
 def piprox(n):
     print("[PIPROX is a program to approx a phi number using phi series based on user input orde]", "\n")
@@ -37,6 +41,8 @@ def piprox(n):
             phi = 3 + float(p)
             print("Your approximated phi = ", phi, "\n")
 piKira2(10)
+
+##################################
 
 ## -> for table
 def probdens(x1, x2, d, r, b):
@@ -59,6 +65,8 @@ def probdens(x1, x2, d, r, b):
 ## table = pd.DataFrame({'x':k1, 'μ=0 & σ2=0.2':k2, 'μ=0 & σ2=1':k3, 'μ=0 & σ2=5':k4, 'μ=0.2 & σ2=0.5':k5})
 ## print(table)
 
+##################################
+
 def matrix(n):
     print("[MATRIX is a program to create a matrix automatically based on n input]", "\n")
     r = c = sqrt(n)
@@ -68,6 +76,8 @@ def matrix(n):
         x =  np.arange(1, n+1).reshape(int(r), int(c))
         print("Here's your %dX%d matrix: \n" % (sqrt(n), sqrt(n)))
         print(x)
+
+##################################
 
 def stats(n):
     print("[STAT is a program to calculate mean, varian, standar deviation while user input customized n data]", "\n")
@@ -85,3 +95,18 @@ def stats(n):
         print("\n\n", "Your current data is", len(x), "\n\n", x, "\n\n", "Mean = ", mean, "\n", "Squared mean = ", float(mean)**2, "\n", "Varians = ", var, "\n", "standar deviation = ", var**0.5, "\n\n")
 
 stats(5)
+
+##################################
+
+def fibonacci(n):
+    print("[FIBONACCI is a program to show fibonacci sequence based n orde]", "\n")
+    if n <= 1:
+        fib = n
+    else:
+        fib = fibonacci(n-1) + fibonacci(n-2)
+    return fib
+
+n = int(input("Input your fibonacci orde = "))
+print("\n")
+print("Your fibonacci sequence:")
+[fibonacci(i) for i in range(1, n+1)]
