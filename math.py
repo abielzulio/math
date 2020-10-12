@@ -1,5 +1,4 @@
-import modul arange untuk float
-from numpy as np
+import numpy as np
 import pandas as pd
 from math import sqrt
 
