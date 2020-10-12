@@ -114,12 +114,21 @@ print("Your fibonacci sequence:")
 ##################################
 
 def logistic(x, k, n):
-  print("[LOGISTIC is a program to compute logistic equation]", "\n")
-  if x <= 0 or x >= 1:
-      print("Your x value is not between 0 - 1.0", "\n")
-  else:
-      for i in range(1, n+1):
-          x = k * x * (1 - x)
-          print("%d  " % (i), x)
+    print("[LOGISTIC is a program to compute logistic equation]", "\n")
+    if x <= 0 or x >= 1:
+        print("Your x value is not between 0 - 1.0", "\n")
+    else:
+        for i in range(1, n+1):
+            x = k * x * (1 - x)
+            print("%d  " % (i), x)
 
-logistic()
+##################################
+
+def interest(m, s, n):
+    print("[LOGISTIC is a program to compute interest]", "\n")
+    print("Initial saving = ", m)
+    a = m
+    for i in range(n):
+        m = m * (1 + (s)/100)
+    print("Final saving = ", int(m))
+    print("You profit =", int(m-a))

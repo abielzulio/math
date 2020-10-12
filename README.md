@@ -48,3 +48,10 @@ logistic() is a program to compute logistic equation where:
 > x = initial x<br />
 > k = growth/rate death<br />
 > n = iteration/year<br />
+
+## __interest(m, s, n)__
+
+interest() is a program to compute user interest where:
+> m = initial saving<br />
+> s = interest in %<br />
+> n = year<br />
