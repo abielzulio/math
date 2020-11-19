@@ -159,6 +159,3 @@ def caesar():
             else:
                 msg_cae = ("Your message is out of your shift number", n)
         print("Your origin message is =", msg_cae)
-    else:
-        print("No choice was made")
-        caesar()
