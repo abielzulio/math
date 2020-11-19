@@ -30,17 +30,25 @@ probdens() is a probability density function where:
 > r = mean<br />
 > b = standar deviation<br />
 
+<br />
+
 ## __matrix(n)__
 
 matrix() is a program to create a matrix automatically based on n input:
+
+<br />
 
 ## __stats(n)__
 
 stats() is a program to calculate mean, varian, standar deviation while user input customized n data.
 
+<br />
+
 ## __fibonacci(n)__
 
 fibonacci() is a program to show fibonacci sequence based n orde.
+
+<br />
 
 ## __logistic(x, k, n)__
 
@@ -48,6 +56,8 @@ logistic() is a program to compute logistic equation where:
 > x = initial x<br />
 > k = growth/rate death<br />
 > n = iteration/year<br />
+
+<br />
 
 ## __interest(m, s, n)__
 
