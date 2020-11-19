@@ -55,3 +55,9 @@ interest() is a program to compute user interest where:
 > m = initial saving<br />
 > s = interest in %<br />
 > n = year<br />
+
+## __caesar__
+
+caesar is an one of famous cipher method by shifting or cycling each words by a customized shift number, ex: 
+n=3
+ABCD -> CDEF

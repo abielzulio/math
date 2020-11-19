@@ -132,3 +132,36 @@ def interest(m, s, n):
         m = m * (1 + (s)/100)
     print("Final saving = ", int(m))
     print("You profit =", int(m-a))
+
+##################################
+
+def caesar():
+    print("[CAESAR CHIPHER - ENCODER/DECODER]")
+    cae = int(input("Do you want to encode or decode? (1/2)"))
+    if cae == 1:
+        msg = input("Input your origin message = ")
+        n = abs(int(input("Input your shift number (1 - 10) = ")))
+        msg_cae = ''
+        for i in msg:
+            if ord(i) == 32:
+                msg_cae = msg_cae + chr(ord(i))
+            elif n>=1 and n<=10:
+                msg_cae = msg_cae + chr(ord(i)+n)
+            else:
+                msg_cae = ("Your message is out of your shift number", n)
+        print("Your caesar encoded message is =", msg_cae)
+    if cae == 2:
+        msg = input("Input your caesar message = ")
+        n = abs(int(input("Input your shift number (1 - 10) = ")))
+        msg_cae = ''
+        for i in msg:
+            if ord(i) == 32:
+                msg_cae = msg_cae + chr(ord(i))
+            elif n>=1 and n<=10:
+                msg_cae = msg_cae + chr(ord(i)+n)
+            else:
+                msg_cae = ("Your message is out of your shift number", n)
+        print("Your origin message is =", msg_cae)
+    else:
+        print("No choice was made")
+        caesar()
